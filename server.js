@@ -9,7 +9,7 @@ const app = express();
 const port = 5000;
 
 app.use(cors({
-    origin: 'http://localhost:3002', // Allow requests from your Next.js frontend
+    origin: ['http://localhost:3002', 'https://rich-text-editor-zeta-two.vercel.app'], // Allow requests from your Next.js frontend and the new URL
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
   }));
